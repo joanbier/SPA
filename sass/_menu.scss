@@ -1,0 +1,90 @@
+.menu {
+    display: flex;
+    height: 12vh;
+    padding: 15px 5px;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (orientation: portrait) and (max-width:360px) {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__logo {
+        @media (orientation: portrait) and (max-width:360px) {
+            width: 100px;
+            margin-left: -10px;
+
+        }
+    }
+
+
+    &__image {
+        filter: invert(100%);
+
+        @media(max-width:768px) {
+            width: 100px;
+        }
+
+        @media (orientation: portrait) and (max-width:360px) {
+            width: 80px;
+
+        }
+    }
+
+    &__hamburger {
+        display: none;
+
+        @media(max-width:768px) {
+            display: block;
+            margin-left: 400px;
+        }
+
+        @media (orientation: portrait) and (max-width:360px) {
+            margin-left: -50px;
+        }
+    }
+
+    &__hamburger-icon {
+        width: 70%;
+    }
+
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+
+        @media(max-width:768px) {
+            display: none;
+        }
+
+    }
+
+    &__item {
+        display: block;
+        font-size: 1rem;
+        margin: 0 20px;
+    }
+
+    &__link {
+        padding: 10px 5px;
+        color: black;
+        text-decoration: none;
+        border-bottom: none;
+        transition: 0.1s;
+
+        &:hover {
+            border-bottom: 1.5px solid rgb(65, 108, 236);
+        }
+    }
+
+    &__btn {
+        @media(max-width:768px) {
+            display: none;
+        }
+    }
+}

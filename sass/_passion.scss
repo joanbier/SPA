@@ -1,0 +1,75 @@
+.passion {
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+
+    @media(max-width:768px) {
+        width: 90%;
+    }
+
+    @media (orientation: portrait) and (max-width:360px) {
+        width: 360px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__title {
+        @include titles;
+
+        @media (orientation: portrait) and (max-width:360px) {
+            font-size: $title-fs-phone;
+            margin-bottom: 0;
+        }
+    }
+
+    &__title-line {
+        @include underscore;
+    }
+
+    &__wrap-passion-items {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+
+        @media (orientation: portrait) and (max-width:360px) {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+
+        }
+    }
+
+    &__item {
+        background-image: url(/images/Pattern_horizontal.png);
+        background-size: 70%;
+        width: 29%;
+
+        @media (orientation: portrait) and (max-width:360px) {
+            width: 70%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__icon,
+    &__subtitle,
+    &__txt {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__icon {
+        margin-top: 15px;
+    }
+
+    &__subtitle {
+        margin: 20px 0;
+    }
+
+    &__txt {
+        font-weight: 200;
+        font-size: 0.9rem;
+        background-color: white;
+        padding-bottom: 10px;
+    }
+}

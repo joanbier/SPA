@@ -1,0 +1,103 @@
+.write-us {
+    width: 80%;
+    margin: 0 auto;
+
+    @media(max-width:768px) {
+        width: 100%;
+    }
+
+
+    &__title {
+        @include titles;
+
+        @media (orientation: portrait) and (max-width:360px) {
+            font-size: $title-fs-phone;
+        }
+    }
+
+    &__title-line {
+        @include underscore;
+    }
+
+    &__contact-wrap {
+        border: 1px solid $frame-color;
+        padding: 30px;
+        width: 70%;
+        margin: 0 auto;
+
+        @media(max-width:768px) {
+            width: 95%;
+            margin-bottom: 100px;
+        }
+
+        @media (orientation: portrait) and (max-width:360px) {
+            padding: 10px;
+        }
+    }
+
+    &__titleSmall {
+        display: block;
+        font-weight: 200;
+        margin: 10px 0;
+        font-size: $form-font-size;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+
+        @media (orientation: portrait) and (max-width:360px) {
+            padding: 0;
+        }
+    }
+
+    &__label {
+        font-size: $form-font-size;
+        margin: 10px 0 5px 0;
+    }
+
+    &__input,
+    &__select,
+    &__textarea {
+        padding: 10px;
+        border: 1px solid $frame-color;
+        resize: none;
+    }
+
+    &__select {
+        border-radius: 0 !important;
+
+    }
+
+    &__textarea {
+        height: 100px;
+        font-family: $default-font;
+        font-size: $form-font-size;
+    }
+
+    &__checkbox-input {
+        @media(max-width:768px) {
+            display: none;
+        }
+    }
+
+    &__checkbox-label {
+        font-size: $form-font-size;
+
+        @media(max-width:768px) {
+            display: none;
+        }
+    }
+
+    &__btn {
+        margin-top: 20px;
+        margin-left: 80%;
+
+        @media (orientation: portrait) and (max-width:360px) {
+            margin-left: 35%;
+            margin-top: 0;
+        }
+    }
+}

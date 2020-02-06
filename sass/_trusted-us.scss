@@ -1,0 +1,46 @@
+.trusted-us {
+    margin-top: 100px;
+
+    @media(max-width:768px) {
+        display: none;
+    }
+
+    &__title {
+        @include titles;
+    }
+
+    &__title-line {
+        @include underscore;
+    }
+
+    &__logo-wrap {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 900px;
+        flex-wrap: wrap;
+    }
+
+    &__logo-item {
+        width: 25%;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 1px solid $frame-color;
+        position: relative;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    &__logo-image {
+        display: block;
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+}
