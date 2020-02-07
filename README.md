@@ -7,4 +7,4 @@ This code presents a simple web page. The whole site is static and it's without 
 * Sass
 
 ## Setup
-To run this project, install it locally using npm or click the link which is places in the top description.
+To run this project, install it locally using npm or click the link which is situated in the top description.
