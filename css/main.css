@@ -52,6 +52,7 @@ html {
 
 .menu {
   position: fixed;
+  z-index: 1;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +164,7 @@ html {
 }
 
 .banner {
+  margin-top: 12vh;
   height: 80vh;
   background-image: url('../images/desktop_banner_photo.png');
   background-position: center;
