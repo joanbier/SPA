@@ -1,4 +1,4 @@
-# The recruitment task
+# Single Page Aplication
 This code presents a simple web page. The whole site is static and it's without subpages.
 
 ## Technologies
