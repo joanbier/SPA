@@ -55,12 +55,12 @@ html {
   z-index: 1;
   top:0;
   left:0;
-  right:0;
+  width:100vw;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 12vh;
+  height: 15vh;
   padding: 15px 5px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -167,7 +167,7 @@ html {
 }
 
 .banner {
-  margin-top: 12vh;
+  margin-top: 15vh;
   height: 80vh;
   background-image: url('../images/desktop_banner_photo.png');
   background-position: center;
